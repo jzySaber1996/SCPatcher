@@ -1,0 +1,450 @@
+[
+  {
+    "guid": 0,
+    "text_a": "In Swing, the password field has a [CODE1] (returns [CODE2]) method instead of the usual [CODE3] (returns [CODE4]) method.  Similarly, I have come across a suggestion not to use [CODE5] to handle passwords.   Why does [CODE6] pose a threat to security when it comes to passwords? It feels inconvenient to use.  ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 1,
+    "text_a": "Section 4. 2 of the draft OAuth 2. 0 protocol indicates that an authorization server can return both an [CODE1] (which is used to authenticate oneself with a. rfc-editor. org/rfc/rfc6749#section-4. 2 Why have both? Why not just make the [CODE2] last as long as the [CODE3] and not have a",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 2,
+    "text_a": "I have two apps that use Integrated Security.  One assigns [CODE1] in the connection string,  and the other sets [CODE2].   What is the difference between [CODE3] and [CODE4] in the context of Integrated Security? ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 3,
+    "text_a": "I'm trying to support JWT bearer token (JSON Web Token) in my web API application and I'm getting lost.   I see support for . NET Core and for OWIN applications.  I'm currently hosting my application in IIS.   How can I achieve this authentication module in my application? Is there any way I can use the",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 4,
+    "text_a": "I am setting up my first [CODE1] server on a [CODE2] and I am fairly new to the details of.  (BTW I am not trying to use Apache at the same time. )   Everything is installed correctly, but I found that unless I use the [CODE3], I am not able.  However I would rather not run it as root for security reason.    What is the best practice to:   Set good permissions / user for node so that.  Start up node and run it automatically.  Handle log information sent to console.  Any other general maintenance and security concerns.    Should I be forwarding port 80 traffic to a different listening port?  Thanks ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 5,
+    "text_a": "Feel free to correct me if my assumptions are wrong here, but let me explain why I'm asking.   Taken from MSDN, a [CODE1]:     Represents text that should be kept confidential.  The text is encrypted for privacy when being used, and deleted from computer memory when no longer needed.    I get this, it makes complete sense to store a password or other private information in a.  Consequently, if a String object contains sensitive information such as a password, credit card number, or personal data, there.    However, in the case of a GUI application (for example, an ssh client), the [CODE2] has to.  All of the text controls use a string as its underlying data type.   So, this means that every time the user presses a key, the old string that was there is.  And we can't control when or if any of those values are discarded from memory.   Now it's time to log in to the server.  Guess what? You need to pass a string over the connection for authentication.  So let's convert our [CODE3] into a [CODE4]. . . .  and now we have a string on the heap with no way to force it to go through garbage.   My point is: no matter what you do, somewhere along the line, that [CODE5] is going to be.   My point is not: whether there are ways of circumventing sending a string to an ssh connection, or.  For this question, you can replace \"ssh connection\" with \"login form\", \"registration form\", \"payment form\", \"foods-you-would-feed-your-puppy-but-not-your-children form\", etc.    So, at what point does using a [CODE6] actually become practical? Is it ever worth the extra. . .  So would using a [CODE7] prevent him from getting to the data anyways? Is this just \"security through obscurity\"?.  Feel free to answer any or all of my questions (or tell me that my assumptions are completely wrong).  :) ",
+    "tgt_text": "A password appears in a log file accidentally.\nA password is being shown at somewhere - once a GUI did show a command line of application that was being run, and the command line consisted of password. Oops.\nUsing memory profiler to profile software with your colleague. Colleague sees your password in memory. Sounds unreal? Not at all.\nI once used RedGate software that could capture the \"value\" of local variables in case of exceptions, amazingly useful. Though, I can imagine that it will log \"string passwords\" accidentally.\nA crash dump that includes string password.",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 6,
+    "text_a": "My team got handed over some server side code (in Java) that generates random tokens and I have a question.  So they do need to be cryptographically random to avoid somebody guessing them or brute force them feasibly.  The token is a \"long\" so it is 64 bits long.   The code currently uses the [CODE1] class to generate these tokens.  The documentation for [CODE2] clearly states the following:      Instances of java. util. Random are not cryptographically secure.  Consider instead using SecureRandom to get a cryptographically secure pseudo-random number generator for use by security-sensitive applications.    However, the way the code is currently using [CODE3] is this - It instantiates the [CODE4] class.  Then it uses [CODE5] method to generate the token.   So my question now - Is it still insecure given that the [CODE6] is being seeded using [CODE7]?",
+    "tgt_text": "The purpose of these tokens is fairly sensitive - used for session id, password reset links etc. So they do need to be cryptographically random to avoid somebody guessing them or brute force them feasibly. The token is a \"long\" so it is 64 bits long.",
+    "label": "C3",
+    "code": "<code>java.util.Random</code>"
+  },
+  {
+    "guid": 7,
+    "text_a": "I am wondering wether the Password Hasher that is default implemented in the UserManager that comes with MVC 5 and. NET Identity Framework, is secure enough? And if so, if you could explain to me how it works?  IPasswordHasher. net Identity password hashing\"  that it does infact salt it behind the scenes.  So I am wondering how does it do this? And where does this salt come from?  My concern.  ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 8,
+    "text_a": "I've just read on the net about a newly discovered security vulnerability in ASP. NET.  You can read the details here.      The problem lies in the way that   ASP. NET implements the AES encryption   algorithm to protect the integrity of   the cookies these applications .    This is a bit vague, but here is a more frightening part:     The. The   cryptographic knowledge required is   very basic.    All in all, I'm not familiar enough with the security/cryptograpy subject to know if this is really.   So, should all ASP. NET developers fear this technique that can own any ASP. NET website in seconds or what?  How does this issue affect the average ASP. NET developer? Does it affect us at all? In real life, what are the consequences of this vulnerability? And, finally:.  @Sri provided a great explanation about what does this type of attack mean.  Here is a shocking video about the issue!  About the seriousness of this vulnerability: Yes, it is indeed.  It lets the attacker to get to know the machine key of an application.  Thus, he can do some very unwanted things.    In posession of the app's machine key, the attacker can decrypt authentication cookies.  Even worse than that, he can generate authentication cookies with the name of any user.  Thus, he can appear as anyone on the site.  The application is unable to differentiate between you or the hacker who generated an authentication cookie with your name.  It also lets him to decrypt (and also generate) session cookies, although this is not as dangerous as the.  Not so serious: He can decrypt the encrypted ViewState of pages.  (If you use ViewState to store confidental data, you shouldn't do this anyways!) Quite unexpected: With the knowledge of. Config, etc. )   Here is a bunch of good practices I got that don't solve the issue but help improve.    You can encrypt sensitive data with Protected Configuration Use HTTP Only cookies Prevent DoS attacks  .    Scott Guthrie published an entry about it on his blog ScottGu's FAQ blog post about the vulnerability.  Yes, even 404s.  (ScottGu said that differentiating between 404s and 500s are essential for this attack. ) Also, into your [CODE1] or [CODE2] put some code that makes a random delay",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 9,
+    "text_a": "I'm trying to grok the purpose of . NET's SecureString.   From MSDN:  An instance of the System. String class is both immutable and, when no longer needed, cannot be programmatically scheduled for garbage collection; that is, the.  Consequently, if a String object contains sensitive information such as a password, credit card number, or personal data, there.  A SecureString object is similar to a String object in that it has a text value.  However, the value of a SecureString object is automatically encrypted, can be modified until your application marks it as. NET Framework garbage collector.  The value of an instance of SecureString is automatically encrypted when the instance is initialized or when the value.  Your application can render the instance immutable and prevent further modification by invoking the MakeReadOnly method.   Is the automatic encryption the big payoff? And why can't I just say: [CODE1] instead of [CODE2] What",
+    "tgt_text": "I'm trying to grok the purpose of .NET's SecureString.",
+    "label": "C2",
+    "code": "<code>SecureString pass = new SecureString(); foreach (char c in &quot;password&quot;.ToCharArray())     pass.AppendChar(c); </code>"
+  },
+  {
+    "guid": 10,
+    "text_a": "I came across a discussion in which I learned that what I'd been doing wasn't in fact salting passwords but.  As each password has its own salt, they must all be brute-forced individually in order to crack them; however,.  A pepper is a site-wide static value stored separately from the database (usually hard-coded in the application's source code).  It is used so that a compromise of the database would not cause the entire application's password table to.    Is there anything I'm missing and is salting &amp; peppering my passwords the best option to protect.  so a breach of the database server does not automatically mean a breach of the application server.  ",
+    "tgt_text": "Ignoring the chosen hash algorithm (I want this to be a discussion of salts &amp; peppers and not specific algorithms but I'm using a secure one), is this a secure option or should I be doing something different?",
+    "label": "C1",
+    "code": "<code>hash_function($salt.hash_function($pepper.$password)) [multiple iterations] </code>"
+  },
+  {
+    "guid": 11,
+    "text_a": "I've heard that exposing database IDs (in URLs, for example) is a security risk, but I'm having trouble understanding why.   Any opinions or links on why it's a risk, or why it isn't?  EDIT: of course the. g.  if you can't see resource [CODE1] you'll get an error page.  Otherwise the URL itself should be secret.   EDIT: if the URL is secret, it will probably contain a generated token that has a limited lifetime,. g.  valid for 1 hour and can only be used once.   EDIT (months later): my current preferred practice for this is to use UUIDS for IDs and expose them.  If I'm using sequential numbers (usually for performance on some DBs) as IDs I like generating a UUID token.  ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 12,
+    "text_a": "I am going to use oAuth to fetch mails and contacts from google.  I don't want to ask the user each time to log in to obtain an access token and secret.  From what I understood, I need to store them with my application either in a database or [CODE1].  But I am a bit worried about security aspects with that.  I read that you can encrypt and decrypt the tokens but it is easy for an attacker to just.  What's the best method to securely store these tokens in Android? ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 13,
+    "text_a": "This question is about protecting against Cross Site Request Forgery attacks only.  It is specifically about: Is protection via the Origin header (CORS) as good as the protection via a CSRF.  I assume, that she uses a modern browser.  Alice visits [CODE1], and evil. example's client side code performs some kind of request to [CODE2] (classic CSRF scenario).   So:  If we don't check the Origin header (server-side), and no CSRF token, we have a CSRF.  If we check a CSRF token, we're safe (but it's a bit tedious).  If we do check the Origin header, the request from evil. example's client side code should be blocked just as well as it would when using a CSRF token - except,. example's code to set the Origin header.   I know, that this should not be possible with XHR (see e. g.  Security for cross-origin resource sharing), at least not, if we trust the W3C spec to be implemented correctly in. g.  form submit? Loading a script/img/. . .  tag? Or any other way a page can use to (legally) create a request? Or maybe some known JS. com's page, . . .   ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 14,
+    "text_a": "I've been getting the same old error every time I test a new [CODE1] from my browser's address bar when.  To allow [CODE2], set [CODE3] to [CODE4].    Rather than grunt in acknowledgement and fire up Fiddler to do a post request, this time, I'm",
+    "tgt_text": "allowed GET requests then as well as making an AJAX request similar to the above with GET instead of POS. This JavaScript should be useless because there should be no way of reading the object returned by your web method.",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 15,
+    "text_a": "I am trying to use one-time passwords that can be generated using Google Authenticator application.  What Google Authenticator does Basically, Google Authenticator implements two types of passwords:  HOTP - HMAC-based One-Time Password, which.   Google Authenticator is also available as Open Source here: code. google. com/p/google-authenticator Current code I was looking for existing solutions to generate HOTP and TOTP passwords, but did not find much.  The code I have is the following snippet responsible for generating HOTP: [CODE1] The problem I am facing is.  Even though I tried multiple [CODE2] values (exactly first 10000, beginning with [CODE3]), with [CODE4] being equal to key.  Questions I have My questions are:  What am I doing wrong? How can I generate HOTP and/or TOTP.  ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 16,
+    "text_a": "I am trying to add some security to the forms on my website.  One of the forms uses AJAX and the other is a straightforward &quot;contact us&quot; form.  I'm trying to add a CSRF token.  The problem I'm having is that the token is only showing up in the HTML &quot;value&quot; some of the.  The rest of the time, the value is empty.  Here is the code I am using on the AJAX form: PHP : [CODE1] HTML : [CODE2] Any suggestions?",
+    "tgt_text": "rand() is predictable\nuniqid() only adds up to 29 bits of entropy\nmd5() doesn't add entropy, it just mixes it deterministically",
+    "label": "C1",
+    "code": "<code>if (!isset($_SESSION)) {     session_start();     $_SESSION['formStarted'] = true; }  if (!isset($_SESSION['token'])) {     $token = md5(uniqid(rand(), TRUE));     $_SESSION['token'] = $token; } </code>"
+  },
+  {
+    "guid": 17,
+    "text_a": "I need to store sensitive information (a symmetric encryption key that I want to keep private) in my C++ application.  The simple approach is to do this: [CODE1] However, running the application through the [CODE2] process (or any other.  What techniques should be used to obscure such sensitive data? Edit: OK, so pretty much all of you have.  The point is that you pick your position on that sliding scale depending on what you're trying to do.  I'm not writing an app for a military installation, I'm writing an app for a home PC.  I need to encrypt data across an untrusted network with a pre-known encryption key.  In these cases, &quot;security through obscurity&quot; is probably good enough! Sure, someone with enough time, energy and skill could.  This blue-sky &quot;lets do it the absolute best way possible&quot; trend in programming amongst new programmers is foolish to.  Thank you for taking the time to answer this question - they were most helpful.  Unfortunately I can only accept one answer, but I've up-voted all the useful answers.  ",
+    "tgt_text": "store sensitive information (a symmetric encryption key that I want to keep private) in my C++ application",
+    "label": "C1",
+    "code": "<code>std::string myKey = &quot;mysupersupersecretpasswordthatyouwillneverguess&quot;; </code>"
+  },
+  {
+    "guid": 18,
+    "text_a": "The more I learned about the power of [CODE1], the more astonished I am at what it can do.  This is adapted from my answer to the question (Using reflection to change static final File. separatorChar for unit testing).   [CODE2]  You can do truly outrageous stuff:  [CODE3]  Presumably the API designers realize how abusable.  So my questions are:   What are the truly legitimate uses for [CODE4]?   Could Java has.  The singleton pattern (putting doubts about its merits aside) is now impossible to enforce.  As my snippets above show, even some basic assumptions of how Java fundamental works is not even close to.   ARE THESE PROBLEMS NOT REAL???    Okay, I just confirmed: thanks to [CODE5], Java strings are.   [CODE6]  Am I the only one who thinks this is a HUGE concern? ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 19,
+    "text_a": "When trying to read a RSA private key from a file using the method  [CODE1]  I get the. generatePrivate(privKeySpec) call.   What does this error mean?  Thanks  Dmitri ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 20,
+    "text_a": "The last week I read a lot articles about password hashing and Blowfish seems to be (one of) the best.  Twitter is using blowfish aka bcrypt to store their passwords (https://shouldichangemypassword. com/twitter-hacked. php) and guess what: change your twitter password to a long password with more than 72 characters and you can.   Blowfish and Pepper  There are a lot different opinions about \"peppering\" passwords.  Some people say it's unnecessary, because you have to assume that the secret pepper-string is also known/published so it.  I have a separate database server so it's quite possible that only the database is leaked and not the.   In this case (pepper not leaked) you make an attack based on a dictionary more difficult (correct me.  If your pepper-string is also leaked: not that bad - you still have the salt and it's as good.     So I think peppering the password is at least no bad choice.   Suggestion  My suggestion to get a Blowfish hash for a password with more than 72 characters (and.     The Question  What is the safer way? Getting an SHA-256 hash first (which returns 64.  Thank's for the comments! ",
+    "tgt_text": "hash password with Blowfish",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 21,
+    "text_a": "I want to validate a set of credentials against the domain controller.  e. g. :  [CODE1]  Method 1.  Query Active Directory with Impersonation  A lot of people suggest querying the Active Directory for something.  If an exception is thrown, then you know the credentials are not valid - as is suggested in this.   There are some serious drawbacks to this approach however:   You are not only authenticating a domain.  That is, you are reading properties from the AD using an impersonation token.  What if the otherwise valid account has no rights to read from the AD? By default all users have.  Binding against the AD has a serious overhead, the AD schema cache has to be loaded at the client.  This is both network, and AD server, resource consuming - and is too expensive for a simple operation like.  You're relying on an exception failure for a non-exceptional case, and assuming that means invalid username and password.  Other problems (e. g.  network failure, AD connectivity failure, memory allocation error, etc) are then mis-intrepreted as authentication failure.    Method 2.  LogonUser Win32 API  Others have suggested using the [CODE2] API function.  This sounds nice, but unfortunately the calling user sometimes needs a permission usually only given to the operating system.  If the   calling process does not have this   privilege, LogonUser fails and   GetLastError.        In some   cases, the process that calls   LogonUser must.  This privilege is   not required for the local system   account or accounts that are members.  By   default, SE_CHANGE_NOTIFY_NAME is   enabled for all users, but some   administrators may disable.    Handing out the \"Act as a part of the operating system\" privilege is not something you want. . . the process that is calling   LogonUser must have the SE_TCB_NAME   privilege (in User Manager, this is.  The SE_TCB_NAME   privilege is very powerful and   should not be granted to any arbitrary user.    Additionally, a call to [CODE3] will fail if a blank password is specified.     What is the proper way to authenticate a set of domain credentials?    I.  It can be assumed that the customers have the ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 22,
+    "text_a": "In order to generate a 32 character token for access to our API we currently use:  [CODE1]  I.   If this is the case, what would the equivalent code look like?  I presume something like this,. . .   [CODE2]  Also what length makes sense that I should pass to the function? ",
+    "tgt_text": "generate a 32 character token for access to our API",
+    "label": "C1",
+    "code": "<code>$token = md5(uniqid(mt_rand(), true)); </code>"
+  },
+  {
+    "guid": 23,
+    "text_a": "I had a look at this question, and wanted to do it for myself.  When I ran this code (taken straight from this answer):  [CODE1]  However I get the warning .  I found this comment, but still no mention of what the Initialization Vector should be and how I should.  Can anyone enlighten me?  I know I could have done some more Googleing, but Stackoverflow comes up first.  ",
+    "tgt_text": "Use of Initialization Vector in openssl_encrypt",
+    "label": "C1",
+    "code": "<code>$textToEncrypt = \"My super secret information.\"; $encryptionMethod = \"AES-256-CBC\";  // AES is used by the U.S. gov't to encrypt top secret documents. $secretHash = \"25c6c7ff35b9979b151f2136cd13b0ff\";  //To encrypt $encryptedMessage = openssl_encrypt($textToEncrypt, $encryptionMethod, $secretHash, '1234567812345678');  //To Decrypt $decryptedMessage = openssl_decrypt($encryptedMessage, $encryptionMethod, $secretHash);  //Result echo \"Encrypted: $encryptedMessage &lt;br&gt;Decrypted: $decryptedMessage\"; </code>"
+  },
+  {
+    "guid": 24,
+    "text_a": "I am developing a JSON/REST web API, for which I specifically want third party websites to be able to call.  Hence, my service is sending the famous CORS header:  [CODE1]  Which allows third party sites to call.  All fine so far.   However, a subsection of my web api is non-public and requires authentication (pretty standard stuff with OAuth and.  Is it safe to enable CORS on this part of my site as well?  On the one hand,.  However, the reason that there is a same origin policy in the first place, is that this might be.  You don't want any website that you visit afterwards to be able to access your private content.    The scenario that I am afraid of is that a user logs in on my web api,.  Will this allow every other website that he vists afterwards to access his private content using the existing session?",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 25,
+    "text_a": "Update: Please note I am not asking what a salt is, what a rainbow table is, what a dictionary attack.  I am querying: If you know the users salt and hash, isn't it quite easy to calculate their password?.   [CODE1]  In the database you store:  [CODE2]  Every implementation of salting I have seen adds.   Surely the implementation described above simply adds another step for the hacker, without actually solving the underlying issue?.  (Update, as pointed out in comments it's best to assume the hacker has access to all your information so.   Let me give an example of how I propose a hacker would hack a user database with a.   Given 10,000 common passwords, and 10,000 user records, we would need to calculate 100,000,000 hashes to discover as.   It might take a few hours, but it's not really an issue. ",
+    "tgt_text": "Every implementation of salting I have seen adds the salt either at the end of the password, or beginnin",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 26,
+    "text_a": "I read about DDD and Access Control, and I found some contradiction between the following two opinions:   \"security.  So where should I put the access control logic by domain driven design, and how should I implement it?. )  I think it should be somewhere near to the business logic, for example a user story could be. . .    Based on the user story we implement the domain model and the services, for example:  [CODE1]",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 27,
+    "text_a": "The jar (bcprov-jdk16-145. jar) has been added to the project, [CODE1] has been added to the class, and [CODE2] does return \"BC\" but. writeFile() still throws [CODE3].  Any ideas?  [CODE4] ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 28,
+    "text_a": "Cross Site Request Forgery (CSRF) is typically prevent with one of the following methods:   Check referer - RESTful.    [CODE1]   [CODE2] fetched by the JavaScript from the authenticated user.  Response: [CODE3] This secret is conceptionally static, but can be changed every day/hour . . .  to improve security.  This is the only confidential thing.  Read the cryptic (but static for all users!) form id with JavaScript, process it together with the user secret:.  Since the server knows the user secret and the form id, it is possible to run the same generateToken.  Only when both values are equal the action will be authorized.    Is something wrong with this approach, despite the fact that it doesn't work without JavaScript?  Addendum:",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 29,
+    "text_a": "We have a high security application and we want to allow users to enter URLs that other users will see.   This introduces a high risk of XSS hacks - a user could potentially enter javascript that another user.  Since we hold sensitive data it's essential that this never happens.   What are the best practices in dealing with this? Is any security whitelist or escape pattern alone good. com   And have it output to another user:  [CODE1]  What I really worry about is them.  I. e.  they input:     alert('hacked!');   So other users get this link:  [CODE2]  My.   You'd be amazed how many sites you can break with this trick - HTML is even worse.  If they know to deal with links do they also know to sanitise [CODE3], [CODE4] and clever CSS references?.  I'm happy that I could produce a Regex (or use one of the excellent suggestions so far) that could",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 30,
+    "text_a": "I'm trying to implement JWT in my authentication system and I have a few questions.  To store the token, I could use cookies but it's also possible to use [CODE1] or [CODE2].   Which would be the best choice?   I have read that JWT protects the site from CSRF.  However, I can't imagine how that would work assuming I save the JWT token in cookie storage.   How would it then protect from CSRF?  Update 1 I saw some usage samples like the following:.    Update 2    I installed the Advanced REST Client Google Chrome extension and was able.  Is it possible to set this header data via Javascript when making a GET request to the server? ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 31,
+    "text_a": "My Rails app uses Devise for authentication.  It has a sister iOS app, and users can log in to the iOS app using the same credentials.  So I need some kind of API for authentication.   Lots of similar questions on here point to this tutorial, but it seems to be out-of-date, as the.  (I'm using Devise 3. 2. 2. ) I've attempted to roll my own based on that tutorial (and this one), but I'm not 100% confident in.   Firstly, following the advice of this gist, I added an [CODE1] text attribute to my [CODE2] table, and. rb  [CODE3]  (Note that my [CODE4] has the line [CODE5]. )  api/sessions_controller. rb  [CODE6]  api/registrations_controller. rb  [CODE7]  And in config/routes. rb:  [CODE8]  I'm out of my depth a bit and I'm sure there's something here that my future.  Some iffy parts:  Firstly, you'll notice that [CODE9] inherits from [CODE10] whereas [CODE11] inherits from [CODE12] (I also. ) This is a pretty ugly arrangement, but I couldn't figure out another way of getting access the methods I.  The tutorial I linked to above has the line [CODE13], but this module seems to have been removed in.   Secondly, I've disabled CSRF protection with the line [CODE14].  I have my doubts about whether this is a good idea - I see a lot of conflicting or.   Thirdly, I want to make sure I understand how authentication works once a user has signed in.  Say I have an API call [CODE15] which returns a list of the current user's friends.  As I understand it, the iOS app would have to get the user's [CODE16] from the database (which is. g.  [CODE17], then my [CODE18] could do something like [CODE19] to get the current_user.  Is it really this simple, or am I missing something?  So for anyone who's managed to read all. g.  when it comes to CSRF attacks? Is my understanding of how to authenticate requests once users are signed in. . . \" above",
+    "tgt_text": "Build an session controller",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 32,
+    "text_a": "I am trying to use a client certificate to authenticate and authorize devices using a Web API and developed a.   I am running into an issue where the client certificate is not being received by the web application.   A number of people of reported this issue, including in this Q&amp;A, but none of them have an.   My hope is to provide more detail to revive this issue and hopefully get an answer for my.   I am open to other solutions.   The main requirement is that a standalone process written in C# can call a Web API and be.    The Web API in this POC is very simple and just returns a single value.   It uses an attribute to validate that HTTPS is used and that a client certificate is present.     [CODE1]  Here is the code for the RequireHttpsAttribute:  [CODE2]  In this POC I.   Once this is working I can add checks for information in the certificate to validate against a list.   Here are the setting in IIS for SSL for this web application.     Here is the code for the client that sends the request with a client certificate.   This is a console application.   [CODE3]  When I run this test app I get back a status code of 403 Forbidden with.   Running this through a debugger I have verified that the certificate is getting loaded and added to the.   The certificate is exported into a CER file that is being loaded.   The full certificate with the private key is located on the Local Machine\u9225\u6a9a Personal and Trusted Root stores.   For this test the client and web application are being run on the same machine.   I can call this Web API method using Fiddler, attaching the same client certificate, and it works fine.   When using Fiddler it passes the tests in RequireHttpsAttribute and returns a successful status code of 200 and.   Has anybody run into the same issue where HttpClient does not send a client certificate in the request.   Here is how I retrieved it:  [CODE4]  I verified that this certificate was getting retrieved correctly.   But I got the same results where the server code does not retrieve any client certificates.   For completeness here is the code used to retrieve the certificate from a file:  [CODE5]  You.   The X509CertificateCollection. Add Method is expecting a type of X509Certificate.   Update 2: I am still trying to figure this out and have tried many different options but to.      I changed the web application to run on a host name instead of local host.  I set the web application to require SSL I verified that the certificate was set for Client Authentication and.    At one point during trying these options it started working",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 33,
+    "text_a": "I have a situation where the client makes a call through curl to a https url.  The SSL certificate of the https url is self signed and therefore curl cannot do certificate validation and fails.  curl provides an option [CODE1] which disables certificate validation.    My question is that on using [CODE2] option, is the data transfer that is done between client.   ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 34,
+    "text_a": "From Android In App Billing version 3 (TrivialDrive)sample application coming with sdk  MainActivity. java  [CODE1]  Well I am not sure I understand this security measure.  I know how to get the application public key (which is already base 64 encoded) from Google Play Developer.    What I am not understanding is this part  [CODE2]  As far as I know, this.    How can we create the same key programmatically using any bit manipulation process? Has someone done it",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 35,
+    "text_a": "I have noticed that there are strange requests to my website trying to find phpmyadmin, like  [CODE1]  etc.   Now I have installed PMA on Ubuntu via apt and would like to access it via webaddress different.  What can I do to change it?  Thanks    Update  For Ubuntu 9. 10 and Apache2, the corresponding setting is located in the file [CODE2] which is a link to [CODE3].  The file contains  [CODE4]  where the first [CODE5] should be changed to something different if one wants. g. :  [CODE6] ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 36,
+    "text_a": "Is it safe to use the [CODE1] in the users table for authenticating the user into the application?  What.  Each time the user logs out, this token is regenerated.  ",
+    "tgt_text": "remember_token",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 37,
+    "text_a": "I'm using [CODE1] encryption in Java 8 and I'm wondering whether my code has a security flaw.   My code seems to work, in that it encrypts and decrypts text, but a few details are unclear.  My main question is this: [CODE2] Does that IV satisfy the requirement of &quot;For a given key, the IV. &quot; from RFC 4106? I'd also appreciate any answers / insight for my related questions (see below), but that first.   I don't know where to find source code or documentation that answers this.   Here is the full code, roughly.   I apologize in case I introduced errors while writing this post: [CODE3] Suppose that users cracking my secret.   More detailed questions / related questions:  Is the IV returned by cipher. getIV() safe for me to use in this way?   Does it avoid the catastrophe of reusing the IV,key. g.  including [CODE4] or random numbers)?  Would it help if I padded the src data with random numbers before.   I can re-post them separately if that is more appropriate for StackOverflow's format.   Let me know!) ",
+    "tgt_text": "using AES/GCM/NoPadding encryption in Java 8",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 38,
+    "text_a": "Let's consider a common-known ASP. NET Core scenario.  Firstly we add the middleware: [CODE1] Then serialize a principal: [CODE2] After these two calls an encrypted cookie will.  You can see the cookie (in my case it was chunked) in any browser devtools:  It's not a.  My question is: how to decrypt the cookie outside the application? I guess a private key is needed for.  The AuthenticationScheme specified during configuration must also be used when calling SignInAsync.  Under the covers the encryption used is ASP. NET's Data Protection system.  If you are hosting on multiple machines, load balancing or using a web farm then you will need to.   So, is it possible to decrypt the authentication cookie, and if so how? UPDATE #1: Based on Ron. AspNetCore. DataProtection. dll: Additional information: The payload was invalid.   I tested different variations of this code on several machines without positive result.  Probably I made a mistake, but where? UPDATE #2: My mistake was the [CODE3] hasn't been set in [CODE4].  Thanks to @RonC again.  ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 39,
+    "text_a": " What is the difference between use [CODE1] in an HTTP header or token in the hidden field? When to.  ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 40,
+    "text_a": "I've been tasked with development of an intranet interface for command line software, and now I'm researching security options.  Our command line application is finished, but I haven't started writing the web interface.  I don't know exactly what the security requirements are for potential customers, although I believe [CODE1] is generally acceptable.  With this in mind, I'm asking for help developing a menu of choices with their associated pros/cons.  Some day, we may consider releasing our web interface to the internet, so I'm willing to consider more security.   I've been doing a lot of reading, and my tentative conclusion is that SSL security with no certificate.  I, a security non-expert, wouldn't need to explain why less security is acceptable to security non-experts.  I could upgrade my application to use a certificate in the future if necessary.   Here's a list of SSL related security choices, sorted by my perception of security level with my comments.  What level of protection do I need?   No SSL.  This might be acceptable if our customers aren't worried about their employees seeing/changing each others' data.  Their employees might want to share results with each other anyway, and I could use IP based access control.  Do SSL with no certificate.  This encrypts the communication, which at least protects the data from being read by unauthorized employees.  Using a password, this is the same level of security as [CODE2] on the command line, right? I don't.  Do SSL with a self-signed certificate.  What does this give me that no certificate gives me? If the DNS can be changed inappropriately, then the.  Worded another way, if the DNS can change, then I think [CODE3] would be vulnerable too.  Do SSL with a local Certificate Authority.  OpenSSL lets me make my own Certificate Authority.  What does this give me that a self-signed certificate does not? I'm assuming that on a LAN, it's less.   Do SSL with an external Certificate Authority.  Is there ever a reason to go this route for an intranet? I found some \"intranet certificates\" for sale.    For reference, this page might be useful for comparing certificates:  http://httpd. apache. org/docs/trunk/ssl/ssl_faq. html#aboutcerts  [update]  Here's an article discussing the risks and rules of obtaining an internal certificate from a public.  ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 41,
+    "text_a": "My Android app contains OAuth consumer secret for Twitter's API.  At the moment it's in [CODE1] file in plain text, so it takes zero effort for someone to look.   Should I take steps to obscure it (like, rot13 or stored in obfuscated Java code)? Or should I",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 42,
+    "text_a": "Is it possible to reverse a SHA-1? I'm thinking about using a SHA-1 to create a simple lightweight system to.  Let's say that I create a sha1 like this with input from a &quot;secret key&quot; and spice it with.  [CODE1] Then I include this SHA-1 in the communication and the server, which can do the same calculation.  And hopefully, nobody would be able to figure out the &quot;secret key&quot;.  But is this really true? If you know that this is how I did it, you would know that.  Can you then use those two and figure out the &quot;secret key&quot;? [CODE2]  Note1: I guess you could.  ",
+    "tgt_text": "create a sha1 like this with input from a &quot;secret key&quot; and spice it with a timestamp",
+    "label": "C1",
+    "code": "<code>sha1(&quot;My Secret Key&quot;+&quot;a timestamp&quot;) </code>"
+  },
+  {
+    "guid": 43,
+    "text_a": "I am trying to hide 2 secrets that I am using in one of my apps.   As I understand the keychain is a good place but I can not add them before I submit.   I thought about this scenario -   Pre seed the secrets in my app's CoreData Database by.  (I already have a seed DB in that app).  As the app launches for the first time, generate and move the keys to the keychain.  Delete the records from CoreData.    Is that safe or can the hacker see this happening and get those keys?  *THIRD EDIT**.  The user can purchase a level (IAP) and after the purchase is completed I need to download the files.   For iOS6 the files are stored with Apple new \"Hosted Content\" feature.  For iOS5 the files are stored in amazon S3.   So in all this process I have 2 keys: 1.  IAP key, for verifying the purchase at Apple IAP.  2.  S3 keys, for getting the files from S3 for iOS5 users:  [CODE1]  Do I need to protect.  Or that hackers will be able to build a hacked version with all the levels pre-downloaded inside.  ",
+    "tgt_text": "IAP key, for verifying the purchase at Apple IAP",
+    "label": "C1",
+    "code": "<code>NSString *secretAccessKey = @\"xxxxxxxxx\"; NSString *accessKey = @\"xxxxxxxxx\"; </code>"
+  },
+  {
+    "guid": 44,
+    "text_a": "Inspired by a thought while looking at the question &quot;Correct HTTP status code when resource is available but not accessible.  Imagine I am building a a carpooling web service.  Suppose the following [CODE1] retrieves the current position of user &quot;angela&quot;.  Only angela herself and a possible driver that is going to pick her should be able to know her.  Also consider the request [CODE2] when no user called john has registered with the system.  There is no john resource let alone a resource for john's location, so this obviously returns a 404 Not.  Or does it? What if I don't want to reveal whether or not john is registered with the system?",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 45,
+    "text_a": "Why was it decided that using XMLHTTPRequest for doing XML calls should not do calls across the domain boundary? .  Why are the Ajax HTTP requests not allowed to cross the domain boundaries?  It seems like an odd.   However, in this case, you could simply add an img, script, or iframe element to the document to.     [Edit]   Some of the answers point out the following reasons, let's point out the.   XSRF (Cross Site Request Forgery, also known as CSRF, XSRF)  Your can do XSRF attacks without using.   As a general rule, XMLHTTPRequest isn't used at all, simply because it's so hard to make an XMLHTTPRequest.   It's much easier to just add an img tag to the URL if you want them to load.   Posting to third party site  [CODE1]  Could be accomplished with  [CODE2]  JPunyon: why would.   You are just inconveniencing developers who want to use it in a way for good.   Anybody who wants to use this feature for evil (aka awesome) could just use some other method of.   Conclusion  I'm marking the answer from bobince as correct because he pointed out the critical problem.   Because XMLHTTPRequest allows you to post, with credentials (cookies) to the destination site, and read the data sent.   In this way, you could browse through the target site, like a bank, and the bank's webserver would.  ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 46,
+    "text_a": "I want to securely store a plaintext password on Windows PC.  I am currently using DPAPI [CODE1] to encrypt it, then store the encrypted blob in a file in user's.    In Windows 7, there is Windows Vault, a credential manager (Control Panel\\User Accounts and Family Safety\\Credential Manager).  On the surface this looks like the right place for a program to store credentials.  However, I was not able to find any API for it.  I read Authentication function reference in MSDN, but frankly got lost in it.   Is there an API to Windows Vault to store and retrieve credentials from a program, and, if yes,",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 47,
+    "text_a": "Celery defaults to using pickle as its serialization method for tasks.   As noted in the FAQ, this represents a security hole.   Celery allows you to configure how tasks get serialized using the [CODE1] configuration parameter.     But this doesn't solve the security problem.   Even if tasks are serialized with JSON or similar, the workers will still execute tasks inserted into the.   So anybody who can write to the task queue can effectively pown the worker processes by writing malicious.   How can I prevent the worker threads from running tasks serialized with pickle? ",
+    "tgt_text": "Celery allows you to configure how tasks get serialized using the CELERY_TASK_SERIALIZER configuration parameter",
+    "label": "C1",
+    "code": "<code>CELERY_TASK_SERIALIZER</code>"
+  },
+  {
+    "guid": 48,
+    "text_a": "I am trying to encode a message with [CODE1] but I have no experience with security subject except some base.  I have been given a private key as [CODE2].  I have managed to write following code block to do the job but I am not sure if I.    I am not an expert but putting my private key as String in code is not secure.  Can anyone guide me?  [CODE3]  My private key is in form as:  [CODE4] ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 49,
+    "text_a": "I'm new to PHP and this is also my first log in system so it would be great if you.   Sign Up:  Step 1: I take the password the user chose and run it through this function:.  On my site no 2 users can share the same username so the username field always has a unique.  If I get 1 row returned I grab the salt for that user.   Step 2: Then I run the user entered password through the encrypt function (as previously posted above) but.  So I so a second lookup on the database to see if the username entered and the hashed password.  If so then the user's credentials are correct.   Step 4: In order to log the user in after their credentials passed I generate a random unique.  Of course they must set as that cookie's value a string which after it is encrypted must match a.  I am not sure what the chances of this is realistically, for a user (perhaps using an automated program).   Sorry for the big essay but since this is such a critical part of my site and due.    So do you see any security holes in this route and how can it be improved? ",
+    "tgt_text": "The get_userinfo() function does a lookup on the users table in the database and returns an associative array",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 50,
+    "text_a": "I have to write a Windows service that handles at some point confidential data (such as PIN codes, passwords, and.  Those informations are needed for a very short amount of time: usually they are sent almost immediately to a.   Lets consider this piece of code:  [CODE1]  Now my concern is about compiler optimizations.  Here the compiler might detect that password is about to be deleted and that changing its value at this.   I don't expect my compiler to care about the value of future-unreferenced memory.   Are my concerns legitimate ? How can I be sure that such a piece of code won't be",
+    "tgt_text": "",
+    "label": "C1",
+    "code": "<code>{   std::string password = getPassword(); // Get the password from the user    writePasswordToSmartCard(password);    // Okay, here we don't need password anymore.   // We set it all to '\\0' so it doesn't stay in memory.   std::fill(password.begin(), password.end(), '\\0'); } </code>"
+  },
+  {
+    "guid": 51,
+    "text_a": "Original question So the project I'm working on is deathly paranoid about file uploads.  In the scope of this question, I'm not using that term in regards to payloads; I'm talking confidentiality.  Programs can always crash and leave temporary files loafing around in the filesystem.  That's normal.  The slightly confidentiality-paranoid can write a cronjob that hits the temporary file folder every few minutes and deletes anything.  . . . unfortunately, we take this paranoid a step further: Ideally, we'd love to never see temporary files from file uploads anywhere.  Is there a way to teach PHP to look for temporary file as blobs in memory rather than in.  (Note also: 'Filesystem' is the keyword here, rather than 'disc', since there are of course ways to map the. ) Alternatively, is there a way these temporary files can be encrypted immediately when they're being written to disc, so.  Depending on what you are hoping to achieve, the accepted answer may not be interesting to you.  If you've come here through a search engine, please take a moment to read the whole thread.  Here is a compilation of usecases as I see them for quick reference: Re: PHP's temporary files  RAM. g.  due to I/O concerns) \u922b?RAMdisk/comparable (plasmid87, Joe Hopfgartner)  Immediate (per-filesystem-user) encryption \u922b?encFS (ADW) (+ a gotcha as per",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 52,
+    "text_a": "I've been trying to get some working Java code to use for encrypting Paypal buttons.  This is no easy task! Even when I get some code, from Paypal, I'm faced with errors. . ugh. .   So here is what I have so far, that I think will work eventually.   I downloaded the Java. zip file from Paypal's website.  Within it are two classes - ClientSide. java and ButtonEncryption. java  The Problem - I'm getting an [CODE1] error.   Questions 1) How do I resolve this issue? 2) What line of code is throwing the error? .   Private Key openssl genrsa -out private-key. pem 1024  Public Certificate openssl req -new -key private-key. pem -x509 -days 1095 -out public-cert. pem  Created PKCS12 File openssl pkcs12 -export -in public-cert. pem -inkey private-key. pem -out my_pkcs12. p12   Additionally, I had to download the Paypal Public Certificate from the Paypal website.     Edited - adding compilation warnings - BouncyCastle  [CODE2]    JCE policy file installation.  2) Extracted files from zip.  3) Placed local_policy. jar and US_export_policy. jar files in C:\\Java\\jdk1. 6. 0_22\\jre\\lib\\security folder.   Note: C:\\Java\\jdk1. 6. 0_22 is set as %JAVA_HOME%   4) Updated system classpath to include location of jars.   Note: There are other files, that came with the JDK 1",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 53,
+    "text_a": "From what i understand the purpose of the Authorization Code flow is to exchange the auth code for access token.  This exchange happens between the server which serves the page and authorization server so that the actual access token.   How should the page server store the access token once it is obtained? I was learning from a.  If not then the flow will be initiated.  The callback looks like this:  [CODE1]  Doesn't storing the access token in the cookie defeath the whole",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 54,
+    "text_a": "I am inheriting from System. Web. Http. AuthorizeAttribute to create a custom authorization/authentication routine to meet some unusual requirements for a web application developed using ASP. NET MVC 4.  This adds security to the Web API used for Ajax calls from the web client.  The requirements are:   The user must logon each time they perform a transaction to verify someone else.  Roles cannot be assigned to the web service methods at program time.  They must be assigned at run time so that an administrator can configure this.  This information is stored in the system database.    The web client is a single page application (SPA) so the typical forms authentication does not work. NET security framework as I can to meet the requirements.   The customized AuthorizeAttribute works great for requirement 2 on determining what roles are associated with a web service.  I accept three parameters, application name, resource name and operation to determine which roles are associated with a method.   [CODE1]  I override the OnAuthorization method to get the roles and authenticate the user.  Since the user has to be authenticated for each transaction I reduce the back and forth chatter by performing.   I get the users credentials from the web client by using basic authentication which passes the encrypted credentials.  So my OnAuthorization method looks like this:  [CODE2]  GetUserNameAndPassword retrieves the credentials from the HTTP header.  I then use the Membership. ValidateUser to validate the credentials.  I have a custom membership provider and role provider plugged in to hit a custom database.  If the user is authenticated I then retrieve the roles for the resource and operation.  From there I use the base OnAuthorization to complete the authorization process.   Here is where it breaks down.   If the user is authenticated I use the standard forms authentication methods to log the user in (FormsAuthentication. SetAuthCookie) and if they fail I log them out (FormsAuthentication. SignOut).   But the problem seems to be that base OnAuthorization class does not have access to Principal that is.  It is always one step behind.  And my guess is that it is using some cached value that does not get updated until there is",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 55,
+    "text_a": "I'd like to generate a certificate for development purposes, but I don't want to install the certificate in the store.   [CODE1] with the switch [CODE2] doesn't create the private key if you specify an output file.   When I tried to create a [CODE3] file by exporting the certificate created with [CODE4], it asks for. . .   Why in the hell is it so complicated? Do you know a simple tool to create a certificate",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 56,
+    "text_a": "I want to store a secret key (\"abc123\") that I will use in the header of my REST API requests.   My server will check this secret key.  If it matches \"abc123\", then allow the request to be made.   I'm thinking about a simple solution like:  [CODE1]  But are there going to be any downfalls",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 57,
+    "text_a": "On my Java EE6, REST service, I want to use authentication tokens for login from mobile devices, User will send.  Can I simply create a token myself like this?(I guess I do not need to encrypt this since I. ) [CODE1] Or there is a more standard way to create these tokens? maybe it exists in one of the",
+    "tgt_text": "create a token myself like this with HTTPS",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 58,
+    "text_a": "I'm making SPA, and decided to use JWT for Authentication/Authorization, and I have read some blogs about Tokens vs Cookies.  I understand how cookie authorization works, and understand how basic token authorization works.  The problem is, I don't see how refresh token fits into it, seems to me it decreases security.  Let me explain, as I see it: Cookie approach When you authenticate user via username &amp; password, you create.  And set it as cookie, every time that client calls to your server it sends that cookie, and server.   This approach is vulnerable to CSRF (Cross Site Request Forgery) To prevent CSRF You can use tokens with.    Token approach When you authenticate user via username &amp; password, you create a signed Token, with expiration.  in payload.  For security tokens should have short expiration time.  Tokens can be stored anywhere Local storage, Session storage, cookies.  I will be using local storage, or session storage, to prevent XSRF.   This vulnerable to XSS (Cross Site Scripting), but you can prevent this by validating HTML input.  Because tokens have short lifecycle, user must login again, when token expires.   Access Token &amp; Refresh Token So I want to use Refresh tokens to prevent user from needing to.  So lets say on Authentication, I give user Access token and Refresh token, when users Access token expires, user.   lets say I store access token in local storage.  If I also store Refresh token in local storage, I don't see any use for it.  Because if attacker can access local storage and get Access token he can also get Refresh token.  So in this case why not just make Access token long lived.  If you store Refresh token as a cookie, it is vulnerable to XSRF, and then attacker can get new.  Also at this point, why not just use Cookie authorization ? Because you already have to look up local.   What's the best practice ? Currently I'm thinking about using:  Access Token (local storage, short lived) Refresh.  What you think about this implementation ? In my eyes this limits server lookups to database, as it uses.  Is this OK ? Thanks ! ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 59,
+    "text_a": "I have a Rails 5 API app ([CODE1]).  The need came up to add a simple GUI form for one endpoint of this API.  Initially, I was getting [CODE2] when I tried to render the form.  I added [CODE3] and [CODE4] to that endpoint.  Which solved that issue as expected.  However, when I try to submit this form I get: [CODE5] [CODE6] [CODE7].  I've added [CODE8] and verified that [CODE9] and [CODE10] are present in my headers, and that [CODE11] is present.  (The tokens themselves are different from each other. ) I've tried, [CODE12], no effect.  I can &quot;fix&quot; this issue by commenting out: [CODE13].  But my understanding is that that is turning off CSRF protection on my form.  (I want CSRF protection. ) What am I missing? UPDATE: To try to make this clear, 99% of this app is a pure JSON.  The need came up to add one HTML view and form to this app.  So for one Controller I want to enable full CSRF protection.  The rest of the app doesn't need CSRF and can remain unchanged.  UPDATE 2: I just compared the page source of this app's HTML form and Header with another conventional Rails.  The [CODE14] in the Header and the [CODE15] in the form are the same.  In the API app I'm having the problem with, they're different.  Maybe that's something? UPDATE 3: Ok, I don't the the mismatch is the issue.  However, in further comparisons between the working and non-working apps I noticed that there's nothing in Network &gt; Cookies.  I see a bunch of things like [CODE16] in the cookies of the working app.  ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 60,
+    "text_a": "What's the need of to put CSRF token name and value inside &lt;head&gt; tag using &lt;meta&gt; like:  e. g:  [CODE1]  I've read about concept to keep CSRF value in cookie but does not find about why.  ",
+    "tgt_text": "use Authentication cookies to prevent CSRF",
+    "label": "C1",
+    "code": "<code>&lt;meta content=\"authenticity_token\" name=\"csrf-param\" /&gt; &lt;meta content=\"4sWPhTlJAmt1IcyNq1FCyivsAVhHqjiDCKRXOgOQock=\" name=\"csrf-token\" /&gt; </code>"
+  },
+  {
+    "guid": 61,
+    "text_a": "I'm using the RNG crypto provider to generate numbers in a range the truly naive way: [CODE1] This is great.  So I've been trying to think of a better way that will achieve a decent distribution but will be.   But now I'm getting into deeper maths and statistics that I simply didn't do at school, or at. g.  for 4 it would be 3 and for 17 it would be 5 select a number of bytes from. g. 1 in this case for 8 bits see if any of the upper bits in the allowed range (3-5) are.  if any of the previous tests fail, start again.   Like I say, this could be exceedingly naive, but I am sure it will return a match in.   I'm not in front of a computer at the moment so can't test, will be doing that tomorrow.  But of course speed isn't my only concern, otherwise I would just use Random (needs a couple of tick.  The biggest concern I have with the above approach is that I am always throwing away up to 7.   I thought of ways to factor them in (e. g.  a simple addition) but they seem terribly unscientific hacks! I know about the mod trick, where you only have.  Is this a dead end?  Ultimately if the best solution is going to be to stick with the",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 62,
+    "text_a": "A hypothetical web-site currently connects using:  [CODE1]  Where the magical connection string is stored in [CODE2]:  [CODE3]. config file into Azure KeyVault.  How do you retrieve anything out of the Azure key vault?  [CODE4]  Except i just made up.  What is the actual api?  Untested attempt  [CODE5]  Bonus Reading   MSDN Forums: Storing sql",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 63,
+    "text_a": "I have read about CSRF and how the Unpredictable Synchronizer Token Pattern is used to prevent it.  I didn't quite understand how it works.   Let's take this scenario :  A user is logged into a site with this form:  [CODE1].  When the request is sent it compares the token in the form data to the token in the session.   How does that prevent CSRF when the hacker can write JavaScript code that will:   Send a.  Search the html text for the CSRF token.  Make the malicious request using that token.    Am missing something? ",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  }
+]

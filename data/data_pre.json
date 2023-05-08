@@ -1,0 +1,450 @@
+[
+  {
+    "guid": 0,
+    "text_a": "In Swing, the password field has a [CODE1] (returns [CODE2]) method instead of the usual [CODE3] (returns [CODE4]) method.   Similarly, I have come across a suggestion not to use [CODE5] to handle passwords.  Why does [CODE6] pose a threat to security when it comes to passwords?It feels inconvenient to use [CODE7].   That means once you've created the [CODE8], if another process can dump memory, there's no way (aside from reflection).  So yes, this is a security concern - but even using [CODE9] only reduces the window of opportunity for an.   Even if it does, there's still the time during which the [CODE10] contains the actual characters as an attack",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 1,
+    "text_a": " 0 protocol indicates that an authorization server can return both an [CODE1] (which is used to authenticate oneself with a.  2Why have both? Why not just make the [CODE2] last as long as the [CODE3] and not have a [CODE4]?The",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 2,
+    "text_a": "  One assigns [CODE1] in the connection string,  and the other sets [CODE2].  What is the difference between [CODE3] and [CODE4] in the context of Integrated Security?According to Microsoft they are the same.    When [CODE5], User ID and Password are specified in the connection.    Recognized values are [CODE6], [CODE7], [CODE8], [CODE9], and [CODE10] (strongly recommended), which is equivalent to [CODE11]",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 3,
+    "text_a": " How can I achieve this authentication module in my application? Is there any way I can use the [CODE1] configuration.  org/rfc/rfc7519Basically, a JWT token looks like this:[CODE2]Example:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.  In the demo I've created (github), to keep the JWT token lightweight, I only store [CODE3] and [CODE4].  Instead of using OWIN middleware, you can simply provide a JWT token endpoint by using a controller action:[CODE5]This is a.  How to generate the token based on [CODE6]?You can use the NuGet package called [CODE7] from Microsoft to generate the.   In the demo, I use [CODE8] with [CODE9]:[CODE10]The endpoint to provide the JWT token is done.  How to validate the JWT when the request comes?In the demo, I have built[CODE11] which inherits from [CODE12] (more detail",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 4,
+    "text_a": "I am setting up my first [CODE1] server on a [CODE2] and I am fairly new to the details of.  ) Everything is installed correctly, but I found that unless I use the [CODE3], I am not able to listen.  You should also edit your [CODE4] file and add that line minus the [CODE5].   You don't need [CODE6] in [CODE7] because the commands there are run as [CODE8] when the system boots.  js start script to the file you edited for port redirection, [CODE9].   However, on RedHat based systems [CODE10] is [CODE11]",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 5,
+    "text_a": " Taken from MSDN, a [CODE1]:  Represents text that should be kept confidential.  I get this, it makes complete sense to store a password or other private information in a [CODE2] over a.  However, in the case of a GUI application (for example, an ssh client), the [CODE3] has to be built from.   So let's convert our [CODE4] into a [CODE5].  My point is: no matter what you do, somewhere along the line, that [CODE6] is going to be converted into.  So, at what point does using a [CODE7] actually becomepractical?Is it ever worth the extra development time to completely eradicatethe.   So would using a [CODE8] prevent him from getting to the data anyways?Is this just \"security through obscurity\"?Sorry if.   :)There are actually very practical uses of [CODE9]",
+    "tgt_text": "A password appears in a log file accidentally.\nA password is being shown at somewhere - once a GUI did show a command line of application that was being run, and the command line consisted of password. Oops.\nUsing memory profiler to profile software with your colleague. Colleague sees your password in memory. Sounds unreal? Not at all.\nI once used RedGate software that could capture the \"value\" of local variables in case of exceptions, amazingly useful. Though, I can imagine that it will log \"string passwords\" accidentally.\nA crash dump that includes string password.",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 6,
+    "text_a": " The code currently uses the [CODE1] class to generate these tokens.   The documentation for [CODE2] clearly states the following:   Instances of java.  However, the way the code is currently using [CODE3] is this - It instantiates the [CODE4] class and then uses.   Then it uses [CODE5] method to generate the token.  So my question now - Is it still insecure given that the [CODE6] is being seeded using [CODE7]? Do I.   Taken from [CODE8] source code (JDK 7u2), from a comment on the method [CODE9], which is the one that.   It simply doesn't matter if you seed with a random value generated by [CODE10] or even produce the value.   This takes significantly less time than 2^48 in the case of [CODE11].   Disbelievers may try out this experiment, where it is shown that you can predict future [CODE12] outputs observing only",
+    "tgt_text": "The purpose of these tokens is fairly sensitive - used for session id, password reset links etc. So they do need to be cryptographically random to avoid somebody guessing them or brute force them feasibly. The token is a \"long\" so it is 64 bits long.",
+    "label": "C3",
+    "code": "<code>java.util.Random</code>"
+  },
+  {
+    "guid": 7,
+    "text_a": " Hashing:[CODE1]Verifying:[CODE2]",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 8,
+    "text_a": " ) Also, into your [CODE1] or [CODE2] put some code that makes a random delay",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 9,
+    "text_a": " Is the automatic encryption the big payoff?And why can't I just say:[CODE1]instead of[CODE2]What aspect of SecureString am I missing?I would",
+    "tgt_text": "I'm trying to grok the purpose of .NET's SecureString.",
+    "label": "C2",
+    "code": "<code>SecureString pass = new SecureString();\nforeach (char c in &quot;password&quot;.ToCharArray())\n    pass.AppendChar(c);\n</code>"
+  },
+  {
+    "guid": 10,
+    "text_a": " In your example, you do [CODE1].   So passing [CODE2] can indeed result in a far weaker hash than [CODE3] if [CODE4] returns a binary string",
+    "tgt_text": "Ignoring the chosen hash algorithm (I want this to be a discussion of salts &amp; peppers and not specific algorithms but I'm using a secure one), is this a secure option or should I be doing something different?",
+    "label": "C1",
+    "code": "<code>hash_function($salt.hash_function($pepper.$password)) [multiple iterations]\n</code>"
+  },
+  {
+    "guid": 11,
+    "text_a": "  if you can't see resource [CODE1] you'll get an error page",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 12,
+    "text_a": "  From what I understood, I need to store them with my application either in a database or [CODE1]",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 13,
+    "text_a": " Alice visits [CODE1], and evil.  example's client side code performs some kind of request to [CODE2] (classic CSRF scenario)",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 14,
+    "text_a": "I've been getting the same old error every time I test a new [CODE1] from my browser's address bar when.   To allow [CODE2], set [CODE3] to [CODE4].   on [CODE5]:[CODE6]This JavaScript should be useless to [CODE7] because there should be no way of reading the object returned.   Firefox 3), it is possible for JavaScript prototype objects to be redefined and make it possible for [CODE8] to",
+    "tgt_text": "allowed GET requests then as well as making an AJAX request similar to the above with GET instead of POS. This JavaScript should be useless because there should be no way of reading the object returned by your web method.",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 15,
+    "text_a": "  The code I have is the following snippet responsible for generating HOTP:[CODE1]The problem I am facing is that the.   Even though I tried multiple [CODE2] values (exactly first 10000, beginning with [CODE3]), with [CODE4] being equal to key.   My problem seemed to be connected with incorrect value of [CODE5] key (it must be correct parameter for [CODE6].  [CODE7]It has two functions:[CODE8] generates one-time token (that should invalidate after single use),[CODE9] generates token based on time (changed in.  Use [CODE10] if you want one-time passwords invalidated after each use.   For checking it on the server you will need to check several values of [CODE11] (as you have no.  Use [CODE12], if you want a token working in 30-second intervals.  ExampleWhen using the following code for one-time HMAC-based password:[CODE13]you will get the following result:[CODE14]which is corresponding to the tokens generated",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 16,
+    "text_a": "  Here is the code I am using on the AJAX form:PHP :[CODE1]HTML :[CODE2]Any suggestions?For security code, please don't generate.  3+ (or with ext-mcrypt)[CODE3]Verifying the CSRF TokenDon't just use [CODE4] or even [CODE5], use [CODE6] (PHP 5.  [CODE7]Going Further with Per-Form TokensYou can further restrict tokens to only be available for a particular form by using [CODE8].  First, generate a second token for use as an HMAC key, then use logic like this to render it:[CODE9]And then",
+    "tgt_text": "rand() is predictable\nuniqid() only adds up to 29 bits of entropy\nmd5() doesn't add entropy, it just mixes it deterministically",
+    "label": "C3",
+    "code": "<code>$token = md5(uniqid(rand(), TRUE));</code>"
+  },
+  {
+    "guid": 17,
+    "text_a": "  The simple approach is to do this:[CODE1]However, running the application through the [CODE2] process (or any other that extracts.  But, if you just want to make sure the key doesn't show up when running [CODE3] on your binary, you.  Obscuring key with XORFor instance, you could use XOR to split the key into two byte arrays:[CODE4]If you create key1",
+    "tgt_text": "store sensitive information (a symmetric encryption key that I want to keep private) in my C++ application",
+    "label": "C1",
+    "code": "<code>std::string myKey = &quot;mysupersupersecretpasswordthatyouwillneverguess&quot;;\n</code>"
+  },
+  {
+    "guid": 18,
+    "text_a": "The more I learned about the power of [CODE1], the more astonished I am at what it can do.  [CODE2]You can do truly outrageous stuff:[CODE3]Presumably the API designers realize how abusable [CODE4] can be, but must have conceded that.   So my questions are:What are the truly legitimate uses for [CODE5]?Could Java has been designed as to NOT have.  ARE THESE PROBLEMS NOT REAL???Okay, I just confirmed: thanks to [CODE6], Java strings are NOT immutable.  [CODE7]Am I the only one who thinks this is a HUGE concern?DO I NEED TO WORRY ABOUT THIS???That depends entirely",
+    "tgt_text": "",
+    "label": "C2",
+    "code": "<code>import java.lang.reflect.*;\n\npublic class EverythingIsTrue {\n   static void setFinalStatic(Field field, Object newValue) throws Exception {\n      field.setAccessible(true);\n\n      Field modifiersField = Field.class.getDeclaredField(\"modifiers\");\n      modifiersField.setAccessible(true);\n      modifiersField.setInt(field, field.getModifiers() &amp; ~Modifier.FINAL);\n\n      field.set(null, newValue);\n   }\n   public static void main(String args[]) throws Exception {      \n      setFinalStatic(Boolean.class.getField(\"FALSE\"), true);\n\n      System.out.format(\"Everything is %s\", false); // \"Everything is true\"\n   }\n}\n</code>"
+  },
+  {
+    "guid": 19,
+    "text_a": "When trying to read a RSA private key from a file using the method[CODE1]I get the exception[CODE2]at the fac.   The easiest thing to do is to use the [CODE3] command to convert the key once.   Alternatively you can use the [CODE4] class of the Bouncycastle lightweight API",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 20,
+    "text_a": " SuggestionMy suggestion to get a Blowfish hash for a password with more than 72 characters (and pepper) is:[CODE1]This is based.  Something like:[CODE2]And it's beneficial because you're using all of the algorithms in ways that are well understood and well studied",
+    "tgt_text": "hash password with Blowfish",
+    "label": "C1",
+    "code": "<code>&lt;?php\n$password = \"Wow. This is a super secret and super, super long password. Let's add some special ch4r4ct3rs a#d everything is fine :)\";\n$hash = password_hash($password, PASSWORD_BCRYPT);\nvar_dump($password);\n\n$input = substr($password, 0, 72);\nvar_dump($input);\n\nvar_dump(password_verify($input, $hash));\n?&gt;\n</code>"
+  },
+  {
+    "guid": 21,
+    "text_a": " :[CODE1]Method 1.   LogonUser Win32 APIOthers have suggested using the [CODE2] API function.  Additionally, a call to [CODE3] will fail if a blank password is specified",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 22,
+    "text_a": "In order to generate a 32 character token for access to our API we currently use:[CODE1]I have read that this.  [CODE2]Also what length makes sense that I should pass to the function?Here is the correct solution:[CODE3]",
+    "tgt_text": "generate a 32 character token for access to our API",
+    "label": "C1",
+    "code": "<code>$token = md5(uniqid(mt_rand(), true));\n</code>"
+  },
+  {
+    "guid": 23,
+    "text_a": "  When I ran this code (taken straight from this answer):[CODE1]However I get the warning[CODE2]So I went and had a.   I think this should work for you:[CODE3]For storage/transmission, one option is to simply concatenate the IV and cipher text",
+    "tgt_text": "Use of Initialization Vector in openssl_encrypt",
+    "label": "C1",
+    "code": "<code>$textToEncrypt = \"My super secret information.\";\n$encryptionMethod = \"AES-256-CBC\";  // AES is used by the U.S. gov't to encrypt top secret documents.\n$secretHash = \"25c6c7ff35b9979b151f2136cd13b0ff\";\n\n//To encrypt\n$encryptedMessage = openssl_encrypt($textToEncrypt, $encryptionMethod, $secretHash, '1234567812345678');\n\n//To Decrypt\n$decryptedMessage = openssl_decrypt($encryptedMessage, $encryptionMethod, $secretHash);\n\n//Result\necho \"Encrypted: $encryptedMessage &lt;br&gt;Decrypted: $decryptedMessage\";\n</code>"
+  },
+  {
+    "guid": 24,
+    "text_a": "  Hence, my service is sending the famous CORS header:[CODE1]Which allows third party sites to call my service through AJAX.   The main web page's JS code can't access the cookie, even via [CODE2].   The cookie is only sent to the server when the [CODE3] property is set, and even then, it is.   In order to protect against this, you should not use the [CODE4] header.   For example:[CODE5]This header will allow only [CODE6] to access the response data",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 25,
+    "text_a": " [CODE1]In the database you store:[CODE2]Every implementation of salting I have seen adds the salt either at the end of the",
+    "tgt_text": "Every implementation of salting I have seen adds the salt either at the end of the password, or beginnin",
+    "label": "C3",
+    "code": "<code>hashed_Password = sha1(s + password )\nhashed_Password = sha1(password + s)\n</code>"
+  },
+  {
+    "guid": 26,
+    "text_a": " Based on the user story we implement the domain model and the services, for example:[CODE1]This is okay, but where is.  com/a/71883/65755 the policy enforcement point should be right before the call of the [CODE2].   We could put the access decisions at the beginning of every service operation, but that would be [CODE3] security.    [CODE4]By lattice based access control (LBAC) the subject has a clearance level, the resource has a required clearance",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 27,
+    "text_a": " jar) has been added to the project, [CODE1] has been added to the class, and [CODE2] does return \"BC\" but.  writeFile() still throws [CODE3].   Any ideas?[CODE4]Im not very familiar with the Android sdk, but it seems that the [CODE5] comes with the [CODE6].  What you will have to do in the PC environment is just add it manually,[CODE7]if you have access to the",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 28,
+    "text_a": "  [CODE1][CODE2] fetched by the JavaScript from the authenticated user.  Response: [CODE3] This secret is conceptionally static, but can be changed every day/hour .  Read the cryptic (but static for all users!) form id with JavaScript, process it together with the user secret: [CODE4]Send",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 29,
+    "text_a": " comAnd have it output to another user:[CODE1]What I really worry about is them using this in a XSS hack.   they input:  alert('hacked!');So other users get this link:[CODE2]My example is just to explain the risk - I'm well.   If they know to deal with links do they also know to sanitise [CODE3], [CODE4] and clever CSS references?I'm.  Here's how we do it on Stack Overflow:[CODE5]",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 30,
+    "text_a": "  To store the token, I could use cookies but it's also possible to use [CODE1] or [CODE2].  How would it then protect from CSRF?Update 1I saw some usage samples like the following:[CODE3]How can I implement that when.  You should also use the Authorization header, but instead of Basic scheme, use the Bearer one:[CODE4]With JS, you could use",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 31,
+    "text_a": " Lots of similar questions on here point to this tutorial, but it seems to be out-of-date, as the [CODE1] module.  Firstly, following the advice of this gist, I added an [CODE2] text attribute to my [CODE3] table, and the following.  rb[CODE4](Note that my [CODE5] has the line [CODE6].  rb[CODE7]api/registrations_controller.  rb[CODE8]And in config/routes.  rb:[CODE9]I'm out of my depth a bit and I'm sure there's something here that my future self will look back.   Some iffy parts:Firstly, you'll notice that [CODE10] inherits from [CODE11] whereas [CODE12] inherits from [CODE13] (I also have some.   The tutorial I linked to above has the line [CODE14], but this module seems to have been removed in.  Secondly, I've disabled CSRF protection with the line [CODE15].   Say I have an API call [CODE16] which returns a list of the current user's friends.   As I understand it, the iOS app would have to get the user's [CODE17] from the database (which is.   [CODE18], then my [CODE19] could do something like [CODE20] to get the current_user",
+    "tgt_text": "Build an session controller",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 32,
+    "text_a": "   [CODE1]Here is the code for the RequireHttpsAttribute:[CODE2]In this POC I am just checking for the availability of the.  [CODE3]When I run this test app I get back a status code of 403 Forbidden with a reason phrase of.    Here is how I retrieved it:[CODE4]I verified that this certificate was getting retrieved correctly and it was being.  For completeness here is the code used to retrieve the certificate from a file:[CODE5]You will notice that when you get",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 33,
+    "text_a": "  curl provides an option [CODE1] which disables certificate validation.   My question is that on using [CODE2] option, is the data transfer that is done between client and server.   [CODE3]/[CODE4] will \"only make\" [CODE5] skip certificate validation, it will not turn off SSL all together",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 34,
+    "text_a": " java[CODE1]Well I am not sure I understand this security measure.   What I am not understanding is this part[CODE2]As far as I know, this public key is a constant string,",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 35,
+    "text_a": "I have noticed that there are strange requests to my website trying to find phpmyadmin, like[CODE1]etc.  10 and Apache2, the corresponding setting is located in the file [CODE2] which is a link to [CODE3].   The file contains[CODE4]where the first [CODE5] should be changed to something different if one wants to avoid the unnecessary.  :[CODE6]The biggest threat is that an attacker could leverage a vulnerability such as; directory traversal,  or using SQL Injection.    If you need some root privileges,  create a custom account that can add/drop/create but doesn't have [CODE7].  Remove [CODE8] permissions from every account.   [CODE9] is one of the most dangerous privileges in MySQL because it allows an attacker to read files or.  htaccess reulset:[CODE10]Do not have a predictable file location like: [CODE11]",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 36,
+    "text_a": "Is it safe to use the [CODE1] in the users table for authenticating the user into the application?What is the.   It's used by the framework to help against [CODE2] cookie hijacking",
+    "tgt_text": "remember_token",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 37,
+    "text_a": "I'm using [CODE1] encryption in Java 8 and I'm wondering whether my code has a security flaw.  My main question is this:[CODE2]Does that IV satisfy the requirement of &quot;For a given key, the IV MUST NOT repeat.    I apologize in case I introduced errors while writing this post:[CODE3]Suppose that users cracking my secret key =.   including [CODE4] or random numbers)?Would it help if I padded the src data with random numbers before encryption? .   It is generated separately using the default [CODE5] implementation.   You can specify another size of tag using [CODE6] as third parameter for your [CODE7] call",
+    "tgt_text": "using AES/GCM/NoPadding encryption in Java 8",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 38,
+    "text_a": "  Firstly we add the middleware:[CODE1]Then serialize a principal:[CODE2]After these two calls an encrypted cookie will be stored at the.   Probably I made a mistake, but where?UPDATE #2: My mistake was the [CODE3] hasn't been set in [CODE4].    You simply need to use the right [CODE5]  created with the right purpose parameter, and subpurpose parameters.   Based on the [CODE6] source code https://github.  cs#L4 it looks like the purpose you need to pass is [CODE7].   And since they are passing additional parameters to the [CODE8] you will need to match them.    So this line of code should get you an [CODE9] that can be used to decrypt the authentication.  Here is an example action method for decrypting your authentication cookie two different ways:[CODE10]This method uses an [CODE11] called [CODE12]",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 39,
+    "text_a": "What is the difference between use [CODE1] in an HTTP header or tokenin the hidden field?When to use the hidden.   A variation on this (the \"Double Submit Cookie\" pattern) puts the [CODE2] value in a hidden form field rather",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 40,
+    "text_a": "  I don't know exactly what the security requirements are for potential customers, although I believe [CODE1] is generally acceptable.   Using a password, this is the same level of security as [CODE2] on the command line, right? I don't.   Worded another way, if the DNS can change, then I think [CODE3] would be vulnerable too",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 41,
+    "text_a": "  At the moment it's in [CODE1] file in plain text, so it takes zero effort for someone to look",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 42,
+    "text_a": " [CODE1]Then I include this SHA-1 in the communication and the server, which can do the same calculation.  Can you then use those two and figure out the &quot;secret key&quot;?[CODE2]Note1:I guess you could brute force in some way,.  [CODE3]You also need to additionally transmit the timestamp in the clear, because otherwise you have no way to verify the",
+    "tgt_text": "create a sha1 like this with input from a &quot;secret key&quot; and spice it with a timestamp",
+    "label": "C1",
+    "code": "<code>sha1(&quot;My Secret Key&quot;+&quot;a timestamp&quot;)\n</code>"
+  },
+  {
+    "guid": 43,
+    "text_a": "  S3 keys, for getting the files from S3 for iOS5 users:[CODE1]Do I need to protect those keys at all?",
+    "tgt_text": "IAP key, for verifying the purchase at Apple IAP",
+    "label": "C1",
+    "code": "<code>NSString *secretAccessKey = @\"xxxxxxxxx\";\nNSString *accessKey = @\"xxxxxxxxx\";\n</code>"
+  },
+  {
+    "guid": 44,
+    "text_a": " Suppose the following[CODE1]retrieves the current position of user &quot;angela&quot;.  Also consider the request[CODE2]when no user called john has registered with the system",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 45,
+    "text_a": " Posting to third party site[CODE1]Could be accomplished with[CODE2]JPunyon: why would you leave the vulnerability in a new featureYou aren't creating",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 46,
+    "text_a": "  I am currently using DPAPI [CODE1] to encrypt it, then store the encrypted blob in a file in user's.   In a domain environment, setting [CODE2] makes the encrypted credential part of the user's roaming profile, and thus available.   [CODE3] only encrypts data; the keeping of the ciphertext is the user's responsibility.   Storing ciphertext under [CODE4] possibly makes it roaming also, depending on the domain's roaming setup, but setting a proper.   Ciphertext obtained from [CODE5] is fully controlled by the application.  Vault supports volatile per-logon-session secrets, stored encrypted in memory ([CODE6]).   In case of [CODE7], the caller may provide additional salt (that has to be provided again during decryption, thus.   [CODE8] has control over creating an audit record when a blob is decrypted (the [CODE9] bit flag).   I cannot see anything like this in the Vault API ([CODE10])",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 47,
+    "text_a": "   Celery allows you to configure how tasks get serialized using the [CODE1] configuration parameter.    Add these two lines to the config (celeryconfig/settings):[CODE2]",
+    "tgt_text": "Celery allows you to configure how tasks get serialized using the CELERY_TASK_SERIALIZER configuration parameter",
+    "label": "C1",
+    "code": "<code>CELERY_TASK_SERIALIZER</code>"
+  },
+  {
+    "guid": 48,
+    "text_a": "I am trying to encode a message with [CODE1] but I have no experience with security subject except some base.   I have been given a private key as [CODE2].   Can anyone guide me?[CODE3]My private key is in form as:[CODE4]Your key format is an unencrypted base64-encoded PKCS8-encoded private key.  [CODE5]",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 49,
+    "text_a": "  You just converted a brute-force attack that should take [CODE1] time to [CODE2] + [CODE3].  Lastly, in the [CODE4] call, you should terminate all open sessions if there are multiple concurrent, active logins",
+    "tgt_text": "The get_userinfo() function does a lookup on the users table in the database and returns an associative array",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 50,
+    "text_a": " Lets consider this piece of code:[CODE1]Now my concern is about compiler optimizations.   I'm not sure, but it's likely [CODE2] doesn't do that (at least by default)",
+    "tgt_text": "",
+    "label": "C1",
+    "code": "<code>{\n  std::string password = getPassword(); // Get the password from the user\n\n  writePasswordToSmartCard(password);\n\n  // Okay, here we don't need password anymore.\n  // We set it all to '\\0' so it doesn't stay in memory.\n  std::fill(password.begin(), password.end(), '\\0');\n}\n</code>"
+  },
+  {
+    "guid": 51,
+    "text_a": "",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 52,
+    "text_a": " javaThe Problem - I'm getting an [CODE1] error.  Questions1) How do I resolve this issue? 2) What line of code is throwing the error?[CODE2]ClientSide class[CODE3]ButtonEncryption class[CODE4]Edited : info.  Edited - adding compilation warnings - BouncyCastle[CODE5]JCE policy file installation stepsThese are the steps I took to installing the JCE",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 53,
+    "text_a": "  The callback looks like this:[CODE1]Doesn't storing the access token in the cookie defeath the whole purpose of the authorization.  , using a shared [CODE2])",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 54,
+    "text_a": " [CODE1]I override the OnAuthorization method to get the roles and authenticate the user.   So my OnAuthorization method looks like this:[CODE2]GetUserNameAndPassword retrieves the credentials from the HTTP header",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 55,
+    "text_a": " [CODE1] with the switch [CODE2] doesn't create the private key if you specify an output file.  When I tried to create a [CODE3] file by exporting the certificate created with [CODE4], it asks for a password",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 56,
+    "text_a": " I'm thinking about a simple solution like:[CODE1]But are there going to be any downfalls to this?Crazy as it sounds, this",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 57,
+    "text_a": " )[CODE1]Or there is a more standard way to create these tokens? maybe it exists in one of the API`s?The scheme",
+    "tgt_text": "create a token myself like this with HTTPS",
+    "label": "C1",
+    "code": "<code>String token = UUID.randomUUID().toString().toUpperCase() \n            + &quot;|&quot; + &quot;userid&quot; + &quot;|&quot;\n            + cal.getTimeInMillis();\n</code>"
+  },
+  {
+    "guid": 58,
+    "text_a": "",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 59,
+    "text_a": "I have a Rails 5 API app ([CODE1]).  Initially, I was getting [CODE2] when I tried to render the form.   I added [CODE3] and [CODE4] to that endpoint.  However, when I try to submit this form I get: [CODE5] [CODE6] [CODE7].   I've added [CODE8] and verified that [CODE9] and [CODE10] are present in my headers, and that [CODE11] is present.  )I've tried, [CODE12], no effect.   I can &quot;fix&quot; this issue by commenting out: [CODE13].   The [CODE14] in the Header and the [CODE15] in the form are the same.   I see a bunch of things like [CODE16] in the cookies of the working app.   Without it, there's no Session [CODE17] stored in a Cookie to be used when validating the token I passed.   Somewhat confusingly, changing things in [CODE18] had no effect.  rb to get working Cookies back:[CODE19]Those three lines coupled with:[CODE20]And of course a form generated through the proper helpers:[CODE21]Got me",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 60,
+    "text_a": " g:[CODE1]I've read about concept to keep CSRF value in cookie but does not find about why to keep inside &lt;head&gt;.  For example, by submitting a form via JavaScript contained on [CODE2] to attack the user's session on [CODE3]:[CODE4]Storing an anti.   It seems like using [CODE5] tags is simply another way it can be stored where the JavaScript can include",
+    "tgt_text": "use Authentication cookies to prevent CSRF",
+    "label": "C1",
+    "code": "<code>&lt;meta content=\"authenticity_token\" name=\"csrf-param\" /&gt;\n&lt;meta content=\"4sWPhTlJAmt1IcyNq1FCyivsAVhHqjiDCKRXOgOQock=\" name=\"csrf-token\" /&gt;\n</code>"
+  },
+  {
+    "guid": 61,
+    "text_a": "I'm using the RNG crypto provider to generate numbers in a range the truly naive way:[CODE1]This is great when the.  The way he has implemented the Next(min, max) method is as follows:[CODE2]The reasoning for the choice of implementation as well",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 62,
+    "text_a": "A hypothetical web-site currently connects using:[CODE1]Where the magical connection string is stored in [CODE2]:[CODE3]Now i'd like to move the connection.   How do you retrieve anything out of the Azure key vault?[CODE4]Except i just made up the easy-to-use Azure API.   What is the actual api?Untested attempt[CODE5]Bonus ReadingMSDN Forums: Storing sql connection string passwords in Key Vault for my Cloud.  Get Access token[CODE6]Note: The resource for Keyvault is [CODE7]4.  cs file[CODE8]2.  config file[CODE9]We also can get more information from CtrlDot mentioned document",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  },
+  {
+    "guid": 63,
+    "text_a": " Let's take this scenario :A user is logged into a site with this form:[CODE1]The server also stores the token in.  Take this for example:[CODE2]The JS console reports:  XMLHttpRequest cannot load [CODE3].   No '[CODE4]' header is present on the requested resource",
+    "tgt_text": "",
+    "label": "C5",
+    "code": ""
+  }
+]
